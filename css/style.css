@@ -79,6 +79,25 @@ ul li {
   visibility: visible;
 }
 
+.menu ul li .dropdown {
+  position: absolute;
+  visibility: hidden;
+}
+
+.dropdown ul li {
+  display: block;
+  margin-top: 5px;
+}
+
+.dropdown ul li a::after {
+  display: none;
+}
+
+.menu ul li:hover .dropdown {
+  visibility: visible;
+}
+
+
 /* main_menu area end */
 /* banner_area start */
 #banner_area {
@@ -133,6 +152,7 @@ ul li {
 .button_area button:hover {
   background-color: #eeb90f;
   color: #360d0d;
+  border: none;
 }
 
 .button_area .btn {
