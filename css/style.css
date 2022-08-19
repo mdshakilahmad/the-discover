@@ -44,6 +44,10 @@ ul li {
   margin-right: 215px;
 }
 
+.menu ul li{
+  position: relative;
+}
+
 .menu ul li a {
   color: #360d0d;
   font-size: 17px;
@@ -82,6 +86,8 @@ ul li {
 .menu ul li .dropdown {
   position: absolute;
   visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease;
 }
 
 .dropdown ul li {
@@ -95,6 +101,7 @@ ul li {
 
 .menu ul li:hover .dropdown {
   visibility: visible;
+  opacity: 1;
 }
 
 
